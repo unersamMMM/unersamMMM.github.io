@@ -1,0 +1,39 @@
+{
+	"name": "Список событий 2",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Кнопка",
+					"sid": 869095448340123
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 210593265157625,
+					"parameters": {
+						"layout": "\"1\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Аудио",
+					"sid": 713302532360668,
+					"parameters": {
+						"audio-file": "20210419_Dizzee Rascal - Training Day - ROBLOX Music",
+						"loop": "looping",
+						"volume": "-10",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 628089813905414
+		}
+	],
+	"sid": 321420692677904
+}

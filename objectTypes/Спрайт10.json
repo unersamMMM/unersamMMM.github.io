@@ -1,0 +1,63 @@
+{
+	"name": "Спрайт10",
+	"plugin-id": "Sprite",
+	"sid": 917794486480535,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "MoveTo",
+			"name": "ДвижениеК",
+			"sid": 267426465016007
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Твёрдый",
+			"sid": 623373694808061
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 599,
+						"height": 415,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 745825,
+						"collisionPoly": {
+							"points": [
+								0.001669449081803005,
+								0.0024096385542168677,
+								0.998330550918197,
+								0.0024096385542168677,
+								0.998330550918197,
+								0.9975903614457832,
+								0.001669449081803005,
+								0.9975903614457832
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 272262180945994,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,604 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 42400,
+	"name": "plat",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Аудио",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Кнопка",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Клавиатура",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Particles",
+			"name": "Частицы",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Shape3D",
+			"name": "3D фигуры",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Спрайт",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Текст",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Тайловый фон",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "MoveTo",
+			"name": "Движение К",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Physics",
+			"name": "Физика",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Platform",
+			"name": "Платформер",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "destroy",
+			"name": "Уничтожение вне макета",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "jumpthru",
+			"name": "Сквозная платформа",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Следить за",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Твёрдый",
+			"author": "Scirra",
+			"bundled": false
+		}
+	],
+	"uniqueId": "dj7aijdjkvi",
+	"objectTypes": {
+		"items": [
+			"Спрайт",
+			"Клавиатура",
+			"Спрайт2",
+			"3DФигуры",
+			"Спрайт3",
+			"Аудио",
+			"Спрайт4",
+			"Спрайт5",
+			"3DФигуры2",
+			"Спрайт6",
+			"Спрайт7",
+			"Спрайт8",
+			"Спрайт9",
+			"Кнопка",
+			"Спрайт10",
+			"Спрайт11",
+			"Спрайт12",
+			"Спрайт13",
+			"Спрайт14",
+			"Частицы",
+			"idk",
+			"Текст",
+			"ТайловыйФон"
+		],
+		"subfolders": []
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"mainmenu",
+			"1",
+			"2",
+			"3",
+			"4",
+			"5",
+			"6",
+			"YOUWIN"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"Список событий 1",
+			"Список событий 2"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [
+				{
+					"name": "Shoulder fired rocket.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 515193698449701,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "snap.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 166058831905973,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "splat.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 731392059824464,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "switch.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 982713355881022,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "SWITCH3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 823566982794076,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "swoosh.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 511629111186317,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "swordlunge.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 215066012856055,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "swordslash.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 362221893605238,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "unsheath.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 110494358049426,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "uuhhh.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 140622571409148,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "victory.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 960613007675099,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "bass.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 912547326379594,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "bfsl-minifigfoots1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 811957612796075,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "bfsl-minifigfoots2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 549511244822570,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "button.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 482812987556694,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "clickfast.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 993600317680373,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "collide.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 607381342674766,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "electronicpingshort.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 349885020264351,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "flashbulb.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 481148351711711,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "glassbreak.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 404451583440566,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "HalloweenGhost.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 205838537402690,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "HalloweenLightning.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 954773736245086,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "HalloweenThunder.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 290752784292284,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "hit.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 314773641404908,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Kerplunk.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 933819597353088,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Kid saying Ouch.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 464046682355893,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Launching rocket.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 321126084619311,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "pageturn.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 700655385168106,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "paintball.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 396053760810554,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Rocket shot.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 907655320863465,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Rocket whoosh 01.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 201126416391324,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Rubber band.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 801119237935213,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Short spring sound.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 427072383319225,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"music": {
+			"items": [
+				{
+					"name": "20210419_Dizzee Rascal - Training Day - ROBLOX Music.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 386702237893782,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "Иконка-256.png",
+					"type": "image/png",
+					"sid": 792697983474040,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "Иконка-16.png",
+					"type": "image/png",
+					"sid": 239130026985652,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "Иконка-32.png",
+					"type": "image/png",
+					"sid": 486654364413148,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "Иконка-64.png",
+					"type": "image/png",
+					"sid": 232544406410991,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "Иконка-128.png",
+					"type": "image/png",
+					"sid": 338823399145031,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "Иконка-512.png",
+					"type": "image/png",
+					"sid": 279223234791394,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "Иконка-загрузки.png",
+					"type": "image/png",
+					"sid": 609341730065787,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [
+			"Шкала 1"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"flowcharts": {
+		"items": [
+			"Блок-схема 1"
+		],
+		"subfolders": []
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"autoIncrementVersion": false,
+		"author": "",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "",
+		"pixelRounding": true,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-integer-scale",
+		"fullscreenQuality": "low",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "landscape",
+		"webgpu": "auto",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"sampling": "nearest",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"zNear": 1,
+		"zFar": 10000,
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https",
+		"exportFileStructure": "folders",
+		"uidAllocationMode": "increment"
+	},
+	"viewportWidth": 500,
+	"viewportHeight": 400,
+	"firstLayout": null
+}

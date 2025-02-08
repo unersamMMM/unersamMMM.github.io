@@ -1,0 +1,9 @@
+{
+	"name": "Кнопка",
+	"plugin-id": "Button",
+	"sid": 613106711180154,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

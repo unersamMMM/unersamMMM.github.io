@@ -1,0 +1,87 @@
+{
+	"name": "Спрайт5",
+	"plugin-id": "Sprite",
+	"sid": 987632962027823,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Physics",
+			"name": "Физика",
+			"sid": 316448516883314
+		},
+		{
+			"behaviorId": "MoveTo",
+			"name": "ДвижениеК",
+			"sid": 212336762999110
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7770929,
+						"collisionPoly": {
+							"points": [
+								0.14800000000000002,
+								0.13000000000000003,
+								0.30649999999999994,
+								0.027999999999999775,
+								0.5129999999999999,
+								0,
+								0.7194999999999999,
+								0.03900000000000001,
+								0.8699999999999999,
+								0.15600000000000006,
+								0.9704999999999999,
+								0.3325,
+								1,
+								0.545,
+								0.9335,
+								0.7535000000000001,
+								0.7759999999999998,
+								0.9059999999999999,
+								0.6409999999999999,
+								0.97,
+								0.45799999999999996,
+								0.99,
+								0.263,
+								0.9319999999999999,
+								0.14600000000000007,
+								0.8499999999999999,
+								0.038000000000000006,
+								0.693,
+								0,
+								0.4959999999999999,
+								0.04400000000000002,
+								0.28099999999999997
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 171217514849667,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

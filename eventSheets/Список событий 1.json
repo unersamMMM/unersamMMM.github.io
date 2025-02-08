@@ -1,0 +1,1101 @@
+{
+	"name": "Список событий 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-jump",
+					"objectClass": "Спрайт",
+					"sid": 563742576918918,
+					"behaviorType": "Платформер"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Спрайт",
+					"sid": 128009467899362,
+					"parameters": {
+						"animation": "\"jump\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Аудио",
+					"sid": 433315478689794,
+					"parameters": {
+						"audio-file": "swoosh",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 189223426198564
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-landed",
+					"objectClass": "Спрайт",
+					"sid": 367682563689735,
+					"behaviorType": "Платформер"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Спрайт",
+					"sid": 393774469769243,
+					"parameters": {
+						"animation": "\"land\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Аудио",
+					"sid": 110809879614643,
+					"parameters": {
+						"audio-file": "flashbulb",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 557523303451287
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-jumping",
+					"objectClass": "Спрайт",
+					"sid": 780642172051337,
+					"behaviorType": "Платформер"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-max-speed",
+					"objectClass": "Спрайт",
+					"sid": 634277784275409,
+					"behaviorType": "Платформер",
+					"parameters": {
+						"max-speed": "500"
+					}
+				},
+				{
+					"id": "set-acceleration",
+					"objectClass": "Спрайт",
+					"sid": 956786444322669,
+					"behaviorType": "Платформер",
+					"parameters": {
+						"acceleration": "1500"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "Спрайт4",
+					"sid": 763433806478766,
+					"behaviorType": "ДвижениеК",
+					"parameters": {
+						"max-speed": "600"
+					}
+				}
+			],
+			"sid": 630103723498466
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-on-floor",
+					"objectClass": "Спрайт",
+					"sid": 274575347516703,
+					"behaviorType": "Платформер"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-max-speed",
+					"objectClass": "Спрайт",
+					"sid": 315859800574781,
+					"behaviorType": "Платформер",
+					"parameters": {
+						"max-speed": "330"
+					}
+				},
+				{
+					"id": "set-acceleration",
+					"objectClass": "Спрайт",
+					"sid": 595891736028681,
+					"behaviorType": "Платформер",
+					"parameters": {
+						"acceleration": "1500"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "Спрайт4",
+					"sid": 192394199634769,
+					"behaviorType": "ДвижениеК",
+					"parameters": {
+						"max-speed": "400"
+					}
+				}
+			],
+			"sid": 257619379340268
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Клавиатура",
+					"sid": 118536094754392,
+					"parameters": {
+						"key": 38
+					}
+				},
+				{
+					"id": "is-by-wall",
+					"objectClass": "Спрайт",
+					"sid": 654823851887651,
+					"behaviorType": "Платформер",
+					"parameters": {
+						"side": "right"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-vector-x",
+					"objectClass": "Спрайт",
+					"sid": 623543969844680,
+					"behaviorType": "Платформер",
+					"parameters": {
+						"vector-x": "-5000"
+					}
+				},
+				{
+					"id": "set-vector-y",
+					"objectClass": "Спрайт",
+					"sid": 373952457017666,
+					"behaviorType": "Платформер",
+					"parameters": {
+						"vector-y": "-650"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Аудио",
+					"sid": 513735860726598,
+					"parameters": {
+						"audio-file": "Rubber band",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Спрайт",
+					"sid": 297858060688750,
+					"parameters": {
+						"animation": "\"jump\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 981001490282135,
+					"parameters": {
+						"seconds": "1",
+						"use-timescale": true
+					}
+				}
+			],
+			"sid": 224015303475434
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Клавиатура",
+					"sid": 603230020642813,
+					"parameters": {
+						"key": 38
+					}
+				},
+				{
+					"id": "is-by-wall",
+					"objectClass": "Спрайт",
+					"sid": 625624285308125,
+					"behaviorType": "Платформер",
+					"parameters": {
+						"side": "left"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-vector-x",
+					"objectClass": "Спрайт",
+					"sid": 398271429705966,
+					"behaviorType": "Платформер",
+					"parameters": {
+						"vector-x": "5000"
+					}
+				},
+				{
+					"id": "set-vector-y",
+					"objectClass": "Спрайт",
+					"sid": 616726777285934,
+					"behaviorType": "Платформер",
+					"parameters": {
+						"vector-y": "-650"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Аудио",
+					"sid": 275912985303076,
+					"parameters": {
+						"audio-file": "Rubber band",
+						"loop": "not-looping",
+						"volume": "1",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Спрайт",
+					"sid": 931669792411640,
+					"parameters": {
+						"animation": "\"jump\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 527051096486216,
+					"parameters": {
+						"seconds": "1",
+						"use-timescale": true
+					}
+				}
+			],
+			"sid": 600447877463873
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Спрайт",
+					"sid": 157384540606668,
+					"parameters": {
+						"object": "Спрайт3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 180714402872399
+				},
+				{
+					"id": "play",
+					"objectClass": "Аудио",
+					"sid": 690517955200288,
+					"parameters": {
+						"audio-file": "Kid saying Ouch",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 594894580527715
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Спрайт",
+					"sid": 643270152670154,
+					"parameters": {
+						"object": "Спрайт9"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 169097848155365
+				},
+				{
+					"id": "play",
+					"objectClass": "Аудио",
+					"sid": 833548336794386,
+					"parameters": {
+						"audio-file": "Kid saying Ouch",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 449416281601762
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-enabled",
+					"objectClass": "Спрайт4",
+					"sid": 771699431427484,
+					"behaviorType": "ДвижениеК"
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-position",
+					"objectClass": "Спрайт4",
+					"sid": 110466622156471,
+					"behaviorType": "ДвижениеК",
+					"parameters": {
+						"x": "Спрайт.BBoxMidX",
+						"y": "Спрайт.Y",
+						"mode": "direct"
+					}
+				}
+			],
+			"sid": 920242321483391
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 965454271576835
+				}
+			],
+			"actions": [
+				{
+					"id": "scroll-to-x",
+					"objectClass": "System",
+					"sid": 200223415494466,
+					"parameters": {
+						"x": "Спрайт4.X"
+					}
+				},
+				{
+					"id": "scroll-to-y",
+					"objectClass": "System",
+					"sid": 118884255418406,
+					"parameters": {
+						"y": "Спрайт4.Y"
+					}
+				}
+			],
+			"sid": 116694185845440
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Клавиатура",
+					"sid": 869401705814209,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Спрайт",
+					"sid": 839945015078776,
+					"parameters": {
+						"state": "mirrored"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Спрайт4",
+					"sid": 990400929234673,
+					"behaviorType": "ДвижениеК",
+					"parameters": {
+						"x": "Спрайт.BBoxLeft - 50",
+						"y": "Спрайт.Y",
+						"mode": "direct"
+					}
+				}
+			],
+			"sid": 477039419881803
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Клавиатура",
+					"sid": 587051723301884,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Спрайт",
+					"sid": 682664128326876,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Спрайт4",
+					"sid": 845002197204907,
+					"behaviorType": "ДвижениеК",
+					"parameters": {
+						"x": "Спрайт.BBoxRight + 50",
+						"y": "Спрайт.Y",
+						"mode": "direct"
+					}
+				}
+			],
+			"sid": 256696650266420
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Спрайт",
+					"sid": 676354239999009,
+					"parameters": {
+						"object": "Спрайт5"
+					}
+				},
+				{
+					"id": "is-falling",
+					"objectClass": "Спрайт",
+					"sid": 518116218044782,
+					"behaviorType": "Платформер"
+				},
+				{
+					"id": "compare-y",
+					"objectClass": "Спрайт",
+					"sid": 493613043630059,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "Спрайт5.Y"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Спрайт5",
+					"sid": 230984473534788
+				},
+				{
+					"id": "set-vector-y",
+					"objectClass": "Спрайт",
+					"sid": 778218195784478,
+					"behaviorType": "Платформер",
+					"parameters": {
+						"vector-y": "-400"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Аудио",
+					"sid": 752216656176928,
+					"parameters": {
+						"audio-file": "splat",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 775837990432548
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-enabled",
+					"objectClass": "Спрайт5",
+					"sid": 171524869108606,
+					"behaviorType": "Физика"
+				},
+				{
+					"id": "is-on-screen",
+					"objectClass": "Спрайт5",
+					"sid": 367480739413721
+				}
+			],
+			"actions": [
+				{
+					"id": "apply-force-towards-position",
+					"objectClass": "Спрайт5",
+					"sid": 244570648807574,
+					"behaviorType": "Физика",
+					"parameters": {
+						"force": "5",
+						"x": "Спрайт.X",
+						"y": "Спрайт.Y",
+						"image-point": "-1"
+					}
+				}
+			],
+			"sid": 640288992195219
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Спрайт5",
+					"sid": 401297886420331,
+					"parameters": {
+						"object": "Спрайт"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 281729816513039
+				},
+				{
+					"id": "play",
+					"objectClass": "Аудио",
+					"sid": 823542027452447,
+					"parameters": {
+						"audio-file": "Kid saying Ouch",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 257163387837055
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Спрайт",
+					"sid": 884540392274498,
+					"parameters": {
+						"object": "3DФигуры2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 603118581174749,
+					"parameters": {
+						"which": "next"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Аудио",
+					"sid": 530783142533213,
+					"parameters": {
+						"audio-file": "victory",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 785998938392674
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Спрайт",
+					"sid": 217449909366607,
+					"parameters": {
+						"object": "Спрайт7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "Спрайт9",
+					"sid": 875190795464367,
+					"parameters": {
+						"y": "Спрайт8.Y"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "Спрайт9",
+					"sid": 142009194734984,
+					"parameters": {
+						"x": "Спрайт8.X"
+					}
+				},
+				{
+					"id": "set-height",
+					"objectClass": "Спрайт9",
+					"sid": 842467272781107,
+					"parameters": {
+						"height": "Спрайт8.Height"
+					}
+				},
+				{
+					"id": "set-width",
+					"objectClass": "Спрайт9",
+					"sid": 490109205496392,
+					"parameters": {
+						"width": "Спрайт8.Width"
+					}
+				}
+			],
+			"sid": 347609758294099
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "Спрайт",
+					"sid": 125210340912993
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 889066228532693
+				},
+				{
+					"id": "play",
+					"objectClass": "Аудио",
+					"sid": 564671299148938,
+					"parameters": {
+						"audio-file": "hit",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 835882240324399
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-enabled",
+					"objectClass": "Спрайт10",
+					"sid": 838552523107546,
+					"behaviorType": "ДвижениеК"
+				},
+				{
+					"id": "is-on-screen",
+					"objectClass": "Спрайт10",
+					"sid": 126534796023546
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 309593505517375,
+					"parameters": {
+						"seconds": "10",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Спрайт10",
+					"sid": 644106272968599,
+					"behaviorType": "ДвижениеК",
+					"parameters": {
+						"x": "Спрайт11.X",
+						"y": "Спрайт11.Y",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Спрайт10",
+					"sid": 119904319981466,
+					"behaviorType": "ДвижениеК",
+					"parameters": {
+						"x": "Спрайт12.X",
+						"y": "Спрайт12.Y",
+						"mode": "direct"
+					}
+				}
+			],
+			"sid": 897990792459689
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-enabled",
+					"objectClass": "Спрайт14",
+					"sid": 249837609818273,
+					"behaviorType": "ДвижениеК"
+				},
+				{
+					"id": "is-on-screen",
+					"objectClass": "Спрайт14",
+					"sid": 205123520478983
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 388737275731504,
+					"parameters": {
+						"seconds": "10",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Спрайт14",
+					"sid": 394010681201778,
+					"behaviorType": "ДвижениеК",
+					"parameters": {
+						"x": "Спрайт11.X",
+						"y": "Спрайт11.Y",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Спрайт14",
+					"sid": 345015161770275,
+					"behaviorType": "ДвижениеК",
+					"parameters": {
+						"x": "Спрайт13.X",
+						"y": "Спрайт13.Y",
+						"mode": "direct"
+					}
+				}
+			],
+			"sid": 771889883750860
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 200250916129531
+				}
+			],
+			"actions": [
+				{
+					"id": "set-spraying",
+					"objectClass": "Частицы",
+					"sid": 497875496940199,
+					"parameters": {
+						"state": "not-spraying"
+					}
+				}
+			],
+			"sid": 689920112506848
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Спрайт5",
+					"sid": 852093456558029,
+					"parameters": {
+						"object": "Спрайт9"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-blend-mode",
+					"objectClass": "Частицы",
+					"sid": 665830440357442,
+					"parameters": {
+						"blend-mode": "normal"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Частицы",
+					"sid": 657602990332683,
+					"parameters": {
+						"size": "15"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "Частицы",
+					"sid": 665111440986744,
+					"parameters": {
+						"x": "Спрайт5.X"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "Частицы",
+					"sid": 147931399464849,
+					"parameters": {
+						"y": "Спрайт5.Y"
+					}
+				},
+				{
+					"id": "set-spraying",
+					"objectClass": "Частицы",
+					"sid": 550518212356330,
+					"parameters": {
+						"state": "spraying"
+					}
+				},
+				{
+					"id": "set-spray-cone",
+					"objectClass": "Частицы",
+					"sid": 217676428248127,
+					"parameters": {
+						"spray-cone": "359"
+					}
+				},
+				{
+					"id": "set-rate",
+					"objectClass": "Частицы",
+					"sid": 294426435773677,
+					"parameters": {
+						"rate": "20"
+					}
+				},
+				{
+					"id": "set-initial-speed-randomiser",
+					"objectClass": "Частицы",
+					"sid": 501217830280456,
+					"parameters": {
+						"speed-randomiser": "95"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Аудио",
+					"sid": 213250421364431,
+					"parameters": {
+						"audio-file": "glassbreak",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Спрайт5",
+					"sid": 795763774089626
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 591151141545746,
+					"parameters": {
+						"seconds": "1.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "Частицы",
+					"sid": 780186754791718,
+					"parameters": {
+						"x": "5000"
+					}
+				}
+			],
+			"sid": 558060888016065
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Спрайт5",
+					"sid": 350188458207251,
+					"parameters": {
+						"object": "Спрайт3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-blend-mode",
+					"objectClass": "Частицы",
+					"sid": 696393761676845,
+					"parameters": {
+						"blend-mode": "normal"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Частицы",
+					"sid": 680153084806063,
+					"parameters": {
+						"size": "15"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "Частицы",
+					"sid": 452902951670983,
+					"parameters": {
+						"x": "Спрайт5.X"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "Частицы",
+					"sid": 183396222164357,
+					"parameters": {
+						"y": "Спрайт5.Y"
+					}
+				},
+				{
+					"id": "set-spraying",
+					"objectClass": "Частицы",
+					"sid": 236503329669948,
+					"parameters": {
+						"state": "spraying"
+					}
+				},
+				{
+					"id": "set-spray-cone",
+					"objectClass": "Частицы",
+					"sid": 506077140077414,
+					"parameters": {
+						"spray-cone": "359"
+					}
+				},
+				{
+					"id": "set-rate",
+					"objectClass": "Частицы",
+					"sid": 550895049795305,
+					"parameters": {
+						"rate": "20"
+					}
+				},
+				{
+					"id": "set-initial-speed-randomiser",
+					"objectClass": "Частицы",
+					"sid": 454453143317087,
+					"parameters": {
+						"speed-randomiser": "95"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Аудио",
+					"sid": 767074904023575,
+					"parameters": {
+						"audio-file": "glassbreak",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Спрайт5",
+					"sid": 834390487606046
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 904249213126163,
+					"parameters": {
+						"seconds": "1.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "Частицы",
+					"sid": 201773253681512,
+					"parameters": {
+						"x": "5000"
+					}
+				}
+			],
+			"sid": 570257938858384
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-falling",
+					"objectClass": "Спрайт",
+					"sid": 144334767668928,
+					"behaviorType": "Платформер"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-max-speed",
+					"objectClass": "Спрайт4",
+					"sid": 129055601545564,
+					"behaviorType": "ДвижениеК",
+					"parameters": {
+						"max-speed": "700"
+					}
+				}
+			],
+			"sid": 548956646388305
+		}
+	],
+	"sid": 488003781694914
+}
